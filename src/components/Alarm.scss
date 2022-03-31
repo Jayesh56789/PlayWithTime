@@ -1,0 +1,54 @@
+.alarm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+
+    > strong {
+        font-size: 2rem;
+        margin-top: 50px;
+    }
+    .date {
+        font-size: 1.2rem;
+    }
+
+    .selectCon {
+        margin: 1rem;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        > div {
+            select {
+                width: 60px;
+                height: 30px;
+                font-size: 1rem;
+            }
+        }
+    }
+
+    button {
+        margin-top: 10px;
+        width: 100px;
+        height: 30px;
+        border-radius: 1rem;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        background-color: white;
+        font-weight: bold;
+    }
+
+    .alarms {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 240px;
+        height: 180px;
+        overflow-y: auto;
+
+        #alarm {
+            margin: 0.5rem;
+        }
+    }
+}

@@ -1,0 +1,82 @@
+.timezoneCon.container {
+    width: 500px;
+    position: relative;
+    padding: 1rem;
+    .livetimer {
+        position: absolute;
+        top: 30px;
+        font-size: 2rem;
+    }
+    .date {
+        position: absolute;
+        top: 70px;
+        font-size: 1rem;
+    }
+    .timezoneSelect {
+        position: absolute;
+        top: 110px;
+        display: flex;
+        align-items: center;
+        select {
+            height: 25px;
+            font-size: 1rem;
+        }
+        button {
+            margin-left: 5px;
+            width: 25px;
+            height: 25px;
+            background-color: white;
+            border: none;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+    .timezoneData {
+        position: absolute;
+        top: 140px;
+        font-size: 1.2rem;
+        text-align: center;
+    }
+    #name{
+        position: absolute;
+        top: 190px;
+    }
+    .timezones {
+        height: 160px;
+        position: absolute;
+        top: 210px;
+        text-align: center;
+        overflow-y: auto;
+        .timezone {
+            min-height: 30px;
+            background-color: white;
+            color: black;
+            padding-left: 0.5rem;
+            padding-right: 0.5rem;
+            border-radius: 5px;
+            margin: 0.5rem;
+            display: grid;
+            place-items: center;
+            grid-template-columns: 1fr auto;
+            button {
+                display: grid;
+                place-items: center;
+                width: 20px;
+                height: 20px;
+                margin-left: 10px;
+                background-color: black;
+                color: white;
+                border: none;
+                outline: none;
+                border-radius: 50%;
+                cursor: pointer;
+                .button {
+                    display: grid;
+                    place-items: center;
+                }
+            }
+        }
+    }
+}

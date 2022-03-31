@@ -1,0 +1,53 @@
+.stopwatch {
+    display: grid;
+    place-items: center;
+    padding: 1rem;
+    position: relative;
+    .timer {
+        position: absolute;
+        top: 10px;
+        display: grid;
+        place-items: center;
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        border: 2px solid #ffffff;
+        font-size: 2rem;
+        margin-top: 1rem;
+    }
+    .sw-buttons {
+        position: absolute;
+        top: 170px;
+        width: 80%;
+        display: grid;
+        place-items: center;
+        grid-template-columns: repeat(3, 1fr);
+        margin: 1rem auto;
+        button {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            border: none;
+            outline: none;
+            display: grid;
+            place-items: center;
+            font-size: 2rem;
+            background-color: white;
+        }
+    }
+    #name {
+        position: absolute;
+        top: 245px;
+        margin-bottom: 0.5rem;
+    }
+    .laps {
+        position: absolute;
+        top: 270px;
+        display: grid;
+        place-items: center;
+        grid-template-columns: repeat(2, 1fr);
+        width: 250px;
+        height: 90px;
+        overflow-y: auto;
+    }
+}
